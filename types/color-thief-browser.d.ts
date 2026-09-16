@@ -1,9 +1,6 @@
-declare module 'color-thief-browser' {
+declare module "color-thief-browser" {
   export default class ColorThief {
-    getColor(img: HTMLImageElement): [number, number, number];
-    getPalette(
-      img: HTMLImageElement,
-      colorCount?: number
-    ): [number, number, number][];
+    getColor(image: HTMLImageElement): [number, number, number];
+    getPalette(image: HTMLImageElement, colorCount?: number): [number, number, number][];
   }
 }

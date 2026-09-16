@@ -1,25 +1,20 @@
-'use client';
+"use client";
 
-import * as React from 'react';
-import { ThemeProvider as NextThemesProvider } from 'next-themes';
-import { useProfileStore } from '@/lib/store';
-import { useDynamicTheme } from '@/lib/useDynamicTheme';
+import * as React from "react";
+import { ThemeProvider as NextThemesProvider } from "next-themes";
+import { SITE } from "@/config";
+import { useDynamicTheme } from "@/lib/use-dynamic-theme";
 
-export function ThemeProvider({
-  children,
-  ...props
-}: React.ComponentProps<typeof NextThemesProvider>) {
-  const { profile } = useProfileStore();
-  useDynamicTheme(profile.avatar);
+export function ThemeProvider({ children, ...props }: React.ComponentProps<typeof NextThemesProvider>) {
+  useDynamicTheme(SITE.avatar);
 
   return (
     <NextThemesProvider
       attribute="class"
       defaultTheme="system"
       enableSystem
-      disableTransitionOnChange
       forcedTheme={props.forcedTheme}
-      themes={['light', 'dark']}
+      themes={["light", "dark"]}
       {...props}
     >
       {children}
