@@ -42,7 +42,7 @@
     @apply border-neutral-200 dark:border-neutral-800 outline-blue-500/50;
   }
   body {
-    @apply bg-white dark:bg-black;
+    @apply bg-white text-black dark:bg-black dark:text-white;
     transition: background-color 150ms ease-out;
   }
 }
