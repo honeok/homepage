@@ -175,9 +175,9 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
-      color-thief-browser:
-        specifier: ^2.0.2
-        version: 2.0.2
+      colorthief:
+        specifier: ^3.5.0
+        version: 3.5.0(sharp@0.35.4(@types/node@26.5.1))
       framer-motion:
         specifier: ^13.3.0
         version: 13.3.0(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
@@ -1098,8 +1098,14 @@ packages:
   color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
 
-  color-thief-browser@2.0.2:
-    resolution: {integrity: sha512-dXHq3ytLWEN7Nbu+oZAbtBP/TRd3uNT1Ll38idklwgr8Cng3XGI7bzMz6xWYID+zPd7AupdHpyNYVacQ8uhK0w==}
+  colorthief@3.5.0:
+    resolution: {integrity: sha512-wV/6Rnkqdx07CAuv8O3WYKBU/j5QdSXbYUfGp26seMIqze5Q40C9ovBSZB9PeVV6XkGe3VWb4zUEtQCYzCfyEA==}
+    hasBin: true
+    peerDependencies:
+      sharp: '>=0.33.0'
+    peerDependenciesMeta:
+      sharp:
+        optional: true
 
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
@@ -3114,7 +3120,9 @@ snapshots:
 
   color-name@1.1.4: {}
 
-  color-thief-browser@2.0.2: {}
+  colorthief@3.5.0(sharp@0.35.4(@types/node@26.5.1)):
+    optionalDependencies:
+      sharp: 0.35.4(@types/node@26.5.1)
 
   concat-map@0.0.1: {}
 
