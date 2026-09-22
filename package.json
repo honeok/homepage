@@ -25,7 +25,7 @@
     "@iconify/json": "^2.2.530",
     "@iconify/utils": "^3.1.7",
     "@tailwindcss/postcss": "^4.3.3",
-    "@types/node": "^26.6.1",
+    "@types/node": "^26.6.2",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
     "eslint": "^9.39.5",
