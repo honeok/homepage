@@ -19,9 +19,7 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"],
-      "@/public/*": ["./public/*"],
-      "@/types/*": ["./types/*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": [
@@ -30,7 +28,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "next.config.ts",
-    "types/**/*.d.ts",
     ".next/dev/types/**/*.ts"
   ],
   "exclude": ["node_modules"]

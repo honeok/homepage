@@ -1,18 +1,9 @@
 @import 'tailwindcss';
 @import './theme.css';
-@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
 @layer utilities {
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
-  }
-
-  .animate-float-slow {
-    animation: float 15s ease-in-out infinite;
-  }
-
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -21,18 +12,6 @@
     to {
       opacity: 1;
       transform: scale(1);
-    }
-  }
-
-  @keyframes float {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
-    100% {
-      transform: translateY(0px);
     }
   }
 }

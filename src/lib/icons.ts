@@ -1,3 +1,5 @@
+import 'server-only'
+
 import { lookupCollection } from '@iconify/json'
 import { getIconCSS, getIconData } from '@iconify/utils'
 

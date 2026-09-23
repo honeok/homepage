@@ -1,7 +1,5 @@
-'use client'
-
-import { Navigation } from '@/components/layout/navigation'
-import { Profile } from '@/components/layout/profile'
+import { Navigation } from '@/components/home/navigation'
+import { Profile } from '@/components/home/profile'
 
 interface HomeProps {
   iconStyles: string

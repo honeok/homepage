@@ -1,4 +1,4 @@
-import { motion } from 'motion/react'
+import * as motion from 'motion/react-client'
 import Image from 'next/image'
 import { SITE, SOCIAL_LINKS } from '@/config'
 import { cn } from '@/lib/utils'
@@ -38,7 +38,7 @@ export function Profile() {
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover"
-            priority
+            preload
           />
         </div>
       </motion.div>

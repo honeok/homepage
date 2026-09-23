@@ -1,4 +1,4 @@
-import { motion } from 'motion/react'
+import * as motion from 'motion/react-client'
 import Image from 'next/image'
 import { SITE } from '@/config'
 
@@ -24,7 +24,7 @@ export function Navigation() {
         }}
         className="text-xl font-medium"
       >
-        <Image src={SITE.logo} alt="Logo" width={40} height={40} priority />
+        <Image src={SITE.logo} alt="Logo" width={40} height={40} preload />
       </motion.div>
     </nav>
   )

@@ -1,4 +1,4 @@
-# editors and ides
+# Editors and IDEs
 .idea/
 .vscode/
 *.code-workspace
@@ -6,28 +6,29 @@
 *.swo
 *~
 
-# agents
+# Agents
 .agents/
 .codex/
 .codex-workflows/
 
-# system files
+# System files
 .DS_Store
 
-# build output
+# Dependencies
+node_modules/
+
+# Build outputs
 .next/
 out/
 next-env.d.ts
+*.tsbuildinfo
 
-# dependencies
-node_modules/
-
-# logs
+# Logs
 *.log*
 
-# script
+# Scripts
 *.sh*
 
-# environment variables
+# Environment variables
 .env
 .env.production
