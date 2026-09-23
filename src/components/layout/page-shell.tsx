@@ -1,9 +1,9 @@
-import type { ReactNode } from "react";
+import type { ReactNode } from 'react'
 
-import { Footer } from "@/components/layout/footer";
+import { Footer } from '@/components/layout/footer'
 
 interface PageShellProps {
-  children: ReactNode;
+  children: ReactNode
 }
 
 export function PageShell({ children }: PageShellProps) {
@@ -12,5 +12,5 @@ export function PageShell({ children }: PageShellProps) {
       <div className="flex flex-1 flex-col">{children}</div>
       <Footer />
     </div>
-  );
+  )
 }

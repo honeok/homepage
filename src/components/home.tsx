@@ -1,10 +1,10 @@
-"use client";
+'use client'
 
-import { Navigation } from "@/components/layout/navigation";
-import { Profile } from "@/components/layout/profile";
+import { Navigation } from '@/components/layout/navigation'
+import { Profile } from '@/components/layout/profile'
 
 interface HomeProps {
-  iconStyles: string;
+  iconStyles: string
 }
 
 export function Home({ iconStyles }: HomeProps) {
@@ -18,5 +18,5 @@ export function Home({ iconStyles }: HomeProps) {
         <Profile />
       </main>
     </div>
-  );
+  )
 }

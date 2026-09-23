@@ -1,6 +1,6 @@
-import { motion } from "motion/react";
-import Image from "next/image";
-import { SITE } from "@/config";
+import { motion } from 'motion/react'
+import Image from 'next/image'
+import { SITE } from '@/config'
 
 export function Navigation() {
   return (
@@ -14,12 +14,12 @@ export function Navigation() {
         }}
         transition={{
           duration: 0.6,
-          ease: "easeOut",
+          ease: 'easeOut',
           rotate: {
             duration: 2,
-            ease: "easeInOut",
+            ease: 'easeInOut',
             repeat: Infinity,
-            repeatType: "loop",
+            repeatType: 'loop',
           },
         }}
         className="text-xl font-medium"
@@ -27,5 +27,5 @@ export function Navigation() {
         <Image src={SITE.logo} alt="Logo" width={40} height={40} priority />
       </motion.div>
     </nav>
-  );
+  )
 }

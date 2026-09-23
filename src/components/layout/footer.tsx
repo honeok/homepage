@@ -1,8 +1,8 @@
-"use client";
+'use client'
 
-import { motion } from "motion/react";
+import { motion } from 'motion/react'
 
-import { SITE } from "@/config";
+import { SITE } from '@/config'
 
 export function Footer() {
   return (
@@ -16,5 +16,5 @@ export function Footer() {
         © {new Date().getFullYear()} {SITE.author}. All rights reserved.
       </p>
     </motion.footer>
-  );
+  )
 }

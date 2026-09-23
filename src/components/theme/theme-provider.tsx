@@ -1,7 +1,7 @@
-"use client";
+'use client'
 
-import * as React from "react";
-import { ThemeProvider as NextThemesProvider } from "next-themes";
+import * as React from 'react'
+import { ThemeProvider as NextThemesProvider } from 'next-themes'
 
 export function ThemeProvider({ children, ...props }: React.ComponentProps<typeof NextThemesProvider>) {
   return (
@@ -10,10 +10,10 @@ export function ThemeProvider({ children, ...props }: React.ComponentProps<typeo
       defaultTheme="system"
       enableSystem
       forcedTheme={props.forcedTheme}
-      themes={["light", "dark"]}
+      themes={['light', 'dark']}
       {...props}
     >
       {children}
     </NextThemesProvider>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import { PageShell } from "@/components/layout/page-shell";
+import { PageShell } from '@/components/layout/page-shell'
 
 export default function NotFound() {
   return (
@@ -35,5 +35,5 @@ export default function NotFound() {
         </p>
       </main>
     </PageShell>
-  );
+  )
 }
